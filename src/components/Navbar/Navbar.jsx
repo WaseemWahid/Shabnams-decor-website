@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
-import { HiX } from 'react-icons/hi'
+// import { HiX } from 'react-icons/hi'
 import { motion } from 'framer-motion'
-import { IoIosRose, IoIosCloseCircle } from 'react-icons/io'
+import { IoIosRose, IoIosCloseCircle } from 'react-icons/io' // check with client to see if she wasnts IoIosRose or FcCloseUpMode for final build
 import { FcCloseUpMode } from 'react-icons/fc'
 
 import './Navbar.css'
+
+// client needs to specify colors for css 
+// maybe changes to layout ?
 
 const Navbar = () => {
   const[toggle, setToggle] = useState(false);
