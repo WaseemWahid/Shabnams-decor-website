@@ -4,10 +4,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: black;
+    background: rgba(44, 44, 44, 0.8);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    border: 1px solid black;
+    border: 1px solid rgba(44, 44, 44, 0.8);
     position: fixed;
     z-index: 2;
 }
@@ -46,7 +46,7 @@
 }
 
 .app__navbar-links a {
-    color: var(--gray-color);
+    color: var(--white-color);
     text-decoration: none;
     flex-direction: column;
     text-transform: uppercase;
@@ -72,7 +72,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--secondary-color);
+    background-color: rgba(0, 0, 0, .4);
 }
 
 .app__navbar-menu svg {
@@ -94,7 +94,7 @@
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    background-color: var(--white-color);
+    background-color: #000;
     background-size: cover;
     background-repeat: repeat;
     box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
@@ -104,7 +104,7 @@
 .app__navbar-menu div svg {
     width: 35px;
     height: 35px;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin: 0.5rem;
 }
 
@@ -125,7 +125,7 @@
 }
 
 .app__navbar-menu div ul li a {
-    color: var(--gray-color);
+    color: var(--primary-color);
     text-decoration: none;
     font-size: 1rem;
     text-transform: uppercase;

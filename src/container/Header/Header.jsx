@@ -22,4 +22,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default AppWrap(Header,'home')
