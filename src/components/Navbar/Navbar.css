@@ -4,10 +4,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: var(--lightGray-color);
+    background: black;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    border: 1px solid var(--lightGray-color);
+    border: 1px solid black;
     position: fixed;
     z-index: 2;
 }
@@ -20,7 +20,7 @@
 
 .app__navbar-logo h4 {
     width: 150px;
-    color: var(--secondary-color);
+    color: white;
 }
 
 .app__navbar-links {
