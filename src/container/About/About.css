@@ -38,3 +38,9 @@
         height: 320px;
     }
 }
+
+.head-text {
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+}

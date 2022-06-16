@@ -17,7 +17,7 @@ const About = () => {
 
     return (
         <div>
-            <h2 className='head-text'>What we do at <span>Shabnam's Decor</span></h2>
+            <h1 className='head-text'>What we do at <span>Shabnam's Decor</span></h1>
             {/* Look to implement scrolling effect here to show services below  */}
             <div className='app__services'>
                 {abouts.map((about, index) => (
