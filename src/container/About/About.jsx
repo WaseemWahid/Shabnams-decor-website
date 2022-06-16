@@ -7,7 +7,10 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 const About = () => {
     return (
         <div>
-            About
+            <h2 className='head-text'>What we do at <span>Shabnam's Decor</span></h2>
+            <div className='app__services'>
+                
+            </div>
         </div>
     )
 }
