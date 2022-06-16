@@ -19,7 +19,7 @@
 }
 
 .app__navbar-logo h4 {
-    width: 150px;
+    width: 1rem;
     color: white;
 }
 
@@ -56,6 +56,7 @@
 
 .app__navbar-links a:hover {
     color: var(--secondary-color);
+    text-decoration: line-through;
 }
 
 @media screen and (max-width: 900px) {
@@ -135,6 +136,7 @@
 
 .app__navbar-menu div ul li a:hover {
     color: var(--secondary-color);
+    text-decoration: line-through;
 }
 
 @media screen and (min-width: 900px) {
