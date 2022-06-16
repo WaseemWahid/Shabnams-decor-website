@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <div className='main'>
             <div className='overlay'></div>
-            <video src={images.bgVideo} autoPlay loop muted />
+            <video src={images.bgVideo} autoPlay loop muted alt="background video"/>
             <motion.div 
             whileInView={{x: [-100, 0], opacity: [0, 1]}}
             transition={{ duration: 1.0 }}

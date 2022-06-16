@@ -6,7 +6,9 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 
 const About = () => {
     return (
-        <div>About</div>
+        <div>
+            About
+        </div>
     )
 }
 
