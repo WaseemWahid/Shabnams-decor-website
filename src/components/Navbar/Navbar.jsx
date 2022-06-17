@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
-// import { HiX } from 'react-icons/hi'
 import { motion } from 'framer-motion'
 import { IoIosRose, IoIosCloseCircle } from 'react-icons/io' // check with client to see if she wasnts IoIosRose or FcCloseUpMode for final build
-import { FcCloseUpMode } from 'react-icons/fc'
 
 import './Navbar.css'
 
@@ -26,7 +24,7 @@ const Navbar = () => {
       </ul>
 
       <div className='app__navbar-menu'>
-        <FcCloseUpMode onClick={() => setToggle(true)} />
+        <IoIosRose onClick={() => setToggle(true)} />
           {toggle && (
             <motion.div
               whileInView={{ x: [300, 0] }}
