@@ -4,7 +4,10 @@ import { AppWrap, MotionWrap } from '../../wrapper'
 
 const Testimonial = () => {
     return (
-        <div>Testimonial</div>
+        <div>
+            {/* Create schema for testimonials and get testimonials from client  */}
+            Testimonial
+        </div>
     )
 }
 
