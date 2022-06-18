@@ -3,7 +3,10 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 
 const Footer = () => {
     return (
-        <div>Footer</div>
+        <div>
+            {/* include google number and email fill footer with useful information and also ask client to specify what is needed here. */}
+            Footer
+        </div>
     )
 }
 
