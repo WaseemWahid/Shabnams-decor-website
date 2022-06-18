@@ -65,6 +65,8 @@
   color: var(--black-color);
 }
 
+/* Make to row? */
+
 .app__social {
   display: flex;
   justify-content: flex-end;
