@@ -3,15 +3,13 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 
 const Footer = () => {
     return (
-        <div>
-            {/* include google number and email fill footer with useful information and also ask client to specify what is needed here. */}
-            Footer
-        </div>
+        <section id='contact'>
+            <div>
+                {/* include google number and email fill footer with useful information and also ask client to specify what is needed here. */}
+                Footer
+            </div>
+        </section>
     )
 }
 
-export default AppWrap(
-    MotionWrap(Footer, 'app__footer'),
-    'contact',
-    'app__primarybg',
-);
+export default MotionWrap(Footer, 'app__footer');

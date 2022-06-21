@@ -7,19 +7,21 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div className='main'>
-            <div className='overlay'></div>
-            <video src={images.bgVideo} autoPlay loop muted alt="background video"/>
-            <motion.div 
-            whileInView={{x: [-100, 0], opacity: [0, 1]}}
-            transition={{ duration: 1.0 }}
-            className="content">
-                <h1>Decor</h1>
-                <p>by Shabnam</p>
-            </motion.div>
-        </div>
+        <section id='home'>
+            <div className='main'>
+                <div className='overlay'></div>
+                <video src={images.bgVideo} autoPlay loop muted alt="background video"/>
+                <motion.div 
+                whileInView={{x: [-100, 0], opacity: [0, 1]}}
+                transition={{ duration: 1.0 }}
+                className="content">
+                    <h1>Decor</h1>
+                    <p>by Shabnam</p>
+                </motion.div>
+            </div>
+        </section>
 
     )
 }
 
-export default AppWrap(Header,'home')
+export default Header

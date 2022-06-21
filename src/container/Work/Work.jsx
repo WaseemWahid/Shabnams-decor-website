@@ -1,13 +1,34 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 import { AppWrap, MotionWrap } from '../../wrapper'
+import { urlFor, client } from '../../client'
+import './Work.css'
 
 const Work = () => {
+    const [work, setWork] = useState([])
+
+    useEffect(() => {
+        const query = '*[_type == "work"]';
+        client.fetch(query)
+            .then((data) => {
+                setWork(data);
+            })
+    }, [])
+
     return (
         <div>
-            {/* Add instagram link and make it look like a instagram feed. Make sure images have a link to instagram! */}
-            {/* Also create schema to make this section dynamic and can change featured images */}
-            Work
+            <div className='app__work app__flex'>
+                <h2>Look at our work on Instagram!</h2>
+                <p>Dont forget to follow to stay up to date on all the new work we have done</p>
+            </div>
+            <div className='slider'>
+                <figure>
+                    {work.map((work,index) => (
+                        <img src={urlFor(work.imgUrl)} key={index} alt='images for insta' />
+                    ))}
+                </figure>
+            </div>
         </div>
     )
 }
