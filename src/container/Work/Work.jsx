@@ -23,11 +23,6 @@ const Work = () => {
                 <p>Dont forget to follow to stay up to date on all the new work we have done</p>
             </div>
             <div className='slider'>
-                <figure>
-                    {work.map((work,index) => (
-                        <img src={urlFor(work.imgUrl)} key={index} alt='images for insta' />
-                    ))}
-                </figure>
             </div>
         </div>
     )

@@ -21,31 +21,13 @@
     scroll-behavior: smooth;
 }
 
-.slide-bottom {
-    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+::-webkit-scrollbar {
+    background-color: black;
+    width: 0.4vw;
 }
 
-@-webkit-keyframes slide-bottom {
-    0% {
-        -webkit-transform: translateY(-25%);
-        transform: translateY(-25%);
-    }
-
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #fc4958, #e85d04, #fc4958);
 }
 
-@keyframes slide-bottom {
-    0% {
-        -webkit-transform: translateY(-25%);
-        transform: translateY(-25%);
-    }
-
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}

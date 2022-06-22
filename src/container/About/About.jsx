@@ -16,8 +16,7 @@ const About = () => {
     }, [])
 
     return (
-        <section id='about'>
-            <div>
+            <div className='app__about-main'>
                 <h1 className='head-text'>What we do at <span>Shabnam's Decor</span></h1>
                 <div className='app__services'>
                     {abouts.map((about, index) => (
@@ -29,14 +28,17 @@ const About = () => {
                             key={about.title + index}
                         >
                             <img src={urlFor(about.imgUrl)} alt={about.title} />
-                            <h2 className='bold-text' style={{ marginTop: 20 }}>{about.title}</h2>
-                            <p className='p-text' style={{ marginTop: 10 }}>{about.description}</p>
+                            <h2 style={{ marginTop: 20 }}>{about.title}</h2>
+                            <p style={{ marginTop: 10 }}>{about.description}</p>
                         </motion.div>
                     ))}
                 </div>
             </div>
-        </section>
     )
 }
 
-export default MotionWrap(About, 'app__about');
+export default AppWrap(
+    MotionWrap(About, 'app__about'),
+    'about',
+    'app__primarybg',
+); 
