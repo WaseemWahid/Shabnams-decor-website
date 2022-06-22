@@ -5,12 +5,12 @@
 :root {
     --font-base: "DM Sans", sans-serif;
 
-    --primary-color: #edf2f8;
-    --secondary-color: #a5a34a;
+    --primary-color: ##C2CaD0;
+    --secondary-color: #E7717D;
     --black-color: #030303;
-    --lightGray-color: #e4e4e4;
+    --lightGray-color: #C2b9B0;
     --gray-color: #6b7688;
-    --brown-color: #46364a;
+    --brown-color: #7E685A;
     --white-color: #ffffff;
 }
 
@@ -23,11 +23,11 @@
 
 
 ::-webkit-scrollbar {
-    background-color: black;
+    background-color: #ffffff;
     width: 0.4vw;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #fc4958, #e85d04, #fc4958);
+    background: linear-gradient(to bottom, #E7717D, #C2b9B0, #E7717D);
 }
 

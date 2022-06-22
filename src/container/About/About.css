@@ -36,17 +36,6 @@
     object-fit: cover;
 }
 
-.head-text {
-    word-spacing: 1rem;
-    letter-spacing: .5rem;
-    text-align: center;
-}
-
-.head-text span {
-    color: blueviolet;
-    text-transform: uppercase;
-}
-
 @media screen and (min-width: 2000px) {
     .app__profile-item  {
         width: 370px;

@@ -95,7 +95,7 @@
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    background-color: #000;
+    background-color: var(--lightGray-color);
     background-size: cover;
     background-repeat: repeat;
     box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
@@ -111,6 +111,7 @@
 
 .app__navbar-menu div ul {
     list-style: none;
+    color: var(--secondary-color);
     margin: 0;
     padding: 0;
     height: 100%;
@@ -132,10 +133,11 @@
     text-transform: uppercase;
     font-weight: 500;
     transition: all 0.3s ease-in-out;
+    letter-spacing: 0.15rem;
 }
 
 .app__navbar-menu div ul li a:hover {
-    color: var(--secondary-color);
+    color: var(--gray-color);
     text-decoration: line-through;
 }
 

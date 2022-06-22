@@ -43,7 +43,7 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: whitesmoke;
+    color: var(--secondary-color);
 }
 
 .content h1 {

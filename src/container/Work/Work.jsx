@@ -19,8 +19,8 @@ const Work = () => {
     return (
         <div>
             <div className='app__work app__flex'>
-                <h2>Look at our work on Instagram!</h2>
-                <p>Dont forget to follow to stay up to date on all the new work we have done</p>
+                <h2 className='head-text'>Look at our work on Instagram!</h2>
+                <p className='p-text'>Dont forget to follow to stay up to date on all the new work we have done</p>
             </div>
             <div className='slider'>
             </div>
