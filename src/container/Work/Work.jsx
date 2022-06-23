@@ -23,6 +23,15 @@ const Work = () => {
                 <p className='p-text'>Dont forget to follow to stay up to date on all the new work we have done</p>
             </div>
             {/* Should we add a grid of pictures on hover it will change opacity and show the instagram logo */}
+            <div className='app__work-item_container'>
+                { work.map((work, index) => (
+                        <div className='app__work-img' key={index}>
+                            <a href={work.instaLink} target="_blank" rel="noreferrer">
+                                <img src={urlFor(work.imgUrl)} alt={work.name} />
+                            </a>
+                        </div>
+                ))}
+            </div>
         </div>
     )
 }

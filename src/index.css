@@ -23,7 +23,7 @@
 
 
 ::-webkit-scrollbar {
-    background-color: #ffffff;
+    background-color: var(--primary-color);
     width: 0.4vw;
 }
 
