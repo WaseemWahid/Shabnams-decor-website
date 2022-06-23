@@ -22,8 +22,7 @@ const Work = () => {
                 <h2 className='head-text'>Look at our work on Instagram!</h2>
                 <p className='p-text'>Dont forget to follow to stay up to date on all the new work we have done</p>
             </div>
-            <div className='slider'>
-            </div>
+            {/* Should we add a grid of pictures on hover it will change opacity and show the instagram logo */}
         </div>
     )
 }
