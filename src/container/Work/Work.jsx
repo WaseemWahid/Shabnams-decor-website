@@ -6,7 +6,7 @@ import { urlFor, client } from '../../client'
 import './Work.css'
 
 const Work = () => {
-    const [work, setWork] = useState([])
+    const [work, setWork] = useState([]);
 
     useEffect(() => {
         const query = '*[_type == "work"]';
@@ -25,11 +25,11 @@ const Work = () => {
             {/* Should we add a grid of pictures on hover it will change opacity and show the instagram logo */}
             <div className='app__work-item_container'>
                 { work.map((work, index) => (
-                        <div className='app__work-img' key={index}>
-                            <a href={work.instaLink} target="_blank" rel="noreferrer">
-                                <img src={urlFor(work.imgUrl)} alt={work.name} />
+                    <div className='app__work-item' key={index} style={{background:`url(${urlFor(work.imgUrl)}) center no-repeat`, backgroundSize: "cover"}}>
+                            <a className='app__work-item-link' href={work.instaLink} target="_blank" rel="noreferrer">
+                                <BsInstagram />
                             </a>
-                        </div>
+                    </div>
                 ))}
             </div>
         </div>
