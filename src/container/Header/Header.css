@@ -43,7 +43,6 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--secondary-color);
 }
 
 .content h1 {
@@ -52,6 +51,14 @@ video {
     background-color: rgb(245, 245, 245);
     padding: 10px 40px;
     mix-blend-mode: screen;
+}
+
+.content p {
+    font-size: 0.8rem;
+    text-align: left;
+    color: var(--secondary-color);
+    line-height: 1.5;
+    letter-spacing: 0.15rem;
 }
 
 .overlay {

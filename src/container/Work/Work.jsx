@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
-import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
+import { BsInstagram } from 'react-icons/bs';
 import { AppWrap, MotionWrap } from '../../wrapper'
 import { urlFor, client } from '../../client'
 import './Work.css'
@@ -19,7 +18,7 @@ const Work = () => {
     return (
         <div>
             <div className='app__work app__flex'>
-                <h2 className='head-text'>Look at our work on Instagram!</h2>
+                <h2 className='head-text'>Look at our work on <span>Instagram!</span></h2>
                 <p className='p-text'>Dont forget to follow to stay up to date on all the new work we have done</p>
             </div>
             {/* Should we add a grid of pictures on hover it will change opacity and show the instagram logo */}
@@ -27,7 +26,9 @@ const Work = () => {
                 { work.map((work, index) => (
                     <div className='app__work-item' key={index} style={{background:`url(${urlFor(work.imgUrl)}) center no-repeat`, backgroundSize: "cover"}}>
                             <a className='app__work-item-link' href={work.instaLink} target="_blank" rel="noreferrer">
-                                <BsInstagram />
+                                <div>
+                                    <BsInstagram />
+                                </div>
                             </a>
                     </div>
                 ))}
