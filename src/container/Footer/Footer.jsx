@@ -3,20 +3,23 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import { FaFacebookF } from 'react-icons/fa'
 import { BsInstagram } from 'react-icons/bs'
 import { images } from '../../constants'
+import { ContactMe } from '../../components';
 import './Footer.css'
 
 const Footer = () => {
     return (
         <section id='contact'>
+            <ContactMe />
             <div className='app__footer'>
                 {/* Contact from under here? */}
+
                 <div className='app__footer-links'>
                     <div className='app__footer-links_phone'>
                         <h1 className='app__footer-headtext'>Contact Us</h1>
                         <p className='p-text'>+1 888-222-4444</p>
                         <p className='p-text'>shabnamedecor@shabnamdecor.com</p>
                     </div>
-                    
+
                     <div className='app__footer-links_logo'>
                         <img src={images.testLogo} alt='footer-logo'></img>
                         <p className='p-text'>"We can put a quote here"</p>
