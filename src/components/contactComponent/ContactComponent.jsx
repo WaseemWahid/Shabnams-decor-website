@@ -28,8 +28,8 @@ function ContactComponent (props) {
 
 
     return (
-        <div className="contactme" >
-            <div className="contactOverlay">
+        <div >
+            {/* <div className="contactOverlay">
                 <div className="container">
                     <div className="form">
                         <form ref={form} onSubmit={sendEmail}>
@@ -62,6 +62,33 @@ function ContactComponent (props) {
                         </form>
                     </div>
                 </div>
+            </div> */}
+            <div className='app__footer-contact-cards'>
+                <div className='app__footer-contact-card'>
+                    <a href='mailto:shabnam@shabnamsdecorandevents.com' className='p-text'>shabnam@shabnamsdecorandevents.com</a>
+                </div>
+                <div className='app__footer-contact-card'>
+                    <a href='tel:+1 (650) 722-1902'>+1 (650) 722-1902</a>
+                </div>
+            </div>
+            <div className='app__footer-form app__flex'>
+                <form ref={form} onSubmit={sendEmail}>
+                    <div className='app__flex'>
+                        <input className='p-text' type='text' name='fullName' placeholder='Your Full Name' required />
+                    </div>
+                    <div className='app__flex'>
+                        <input className='p-text' type="text" name="phone" placeholder='Your Phone Number' required/>
+                    </div>
+                    <div className='app__flex'>
+                        <input className='p-text' type="text" name="email" placeholder='Your Email' required/>
+                    </div>
+                    <div>
+                        <textarea name="message" placeholder='Your Message' required></textarea>
+                    </div>
+                    <div>
+                        <button>SUBMIT</button>
+                    </div>
+                </form>
             </div>
         </div>
     )
