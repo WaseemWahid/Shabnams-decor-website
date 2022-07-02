@@ -9,6 +9,7 @@ import './Footer.css'
 const Footer = () => {
     return (
         <section id='contact'>
+            <h1 className='head-text'>Contact <span>Me!</span></h1>
             <ContactMe />
             <div className='app__footer'>
                 {/* Contact from under here? */}
