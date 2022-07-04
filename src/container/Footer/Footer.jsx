@@ -1,18 +1,31 @@
 import React from 'react'
-import { AppWrap, MotionWrap } from '../../wrapper';
-import { FaFacebookF } from 'react-icons/fa'
-import { BsInstagram } from 'react-icons/bs'
-import { images } from '../../constants'
+import { MotionWrap } from '../../wrapper';
 import { ContactMe } from '../../components';
 import './Footer.css'
 
 const Footer = () => {
     return (
         <section id='contact'>
-            <h1 className='head-text'>Contact <span>Me!</span></h1>
-            <ContactMe />
+            <div className='app__footer-header'>
+                <h1 className='head-text'>Follow Us On!</h1>
+                <div className='app__footer-socials'>
+                    <div>
+                        <p className='p-text'>Instagram</p>
+                    </div>
+                    <div>
+                        <p className='p-text'>Facebook</p>
+                    </div>
+                </div>
+            </div>
             <div className='app__footer'>
                 {/* Contact from under here? */}
+                <ContactMe />
+            </div>
+            <div className='app__footer-history'>
+                <h3 className='head-text'>A Little About <span>Us</span></h3>
+                <p className='p-text'>
+                    Shabnam's Decor was started by Shabnam Nazari who had a keen eye on design and .... 
+                </p>
             </div>
         </section>
     )

@@ -3,14 +3,14 @@ import emailjs from '@emailjs/browser'
 import './ContactComponent.css'
 import { useState, useRef } from 'react'
 
-
+import './ContactComponent.css'
 const Result = () => {
     return (
-        <p>Your Message has been succesfully sent. I will contact you soon!</p>
+        <p className='p-text'>Your Message has been succesfully sent. I will contact you soon!</p>
     );
 }
 
-function ContactComponent (props) {
+function ContactComponent(props) {
     const [result, showResult] = useState(false);
     const form = useRef();
     const sendEmail = (e) => {
@@ -22,73 +22,66 @@ function ContactComponent (props) {
             }, (error) => {
                 console.log(error.text);
             });
-            e.target.reset();
-            showResult(true)
+        e.target.reset();
+        showResult(true)
     }
 
 
     return (
-        <div >
-            {/* <div className="contactOverlay">
-                <div className="container">
-                    <div className="form">
-                        <form ref={form} onSubmit={sendEmail}>
-                            <div className="formWord">
-                                <h2>Say Hello!</h2>
-                                <span>Full Name</span>
-                                <br />
-                                <input className="input100" type="text" name="fullName" required />
-                                <br />
-                                <span>Phone Number</span>
-                                <br />
-                                <input className="input100" type="text" name="phone" required />
-                                <br />
-                                <span>Enter Email</span>
-                                <br />
-                                <input className="input100" type="text" name="email" required />
-                                <br />
+        <div>
+            <div className="container">
+                <div className="screen">
+                    <div className="screen-header">
+                        <div className="screen-header-left">
+                            <div className="screen-header-button close"></div>
+                            <div className="screen-header-button maximize"></div>
+                            <div className="screen-header-button minimize"></div>
+                        </div>
+                        <div className="screen-header-right">
+                            <div className="screen-header-ellipsis"></div>
+                            <div className="screen-header-ellipsis"></div>
+                            <div className="screen-header-ellipsis"></div>
+                        </div>
+                    </div>
+                    <div className="screen-body">
+                        <div className="screen-body-item left">
+                            <div className="app-title">
+                                <span>CONTACT US</span>
                             </div>
-                            <div className="formWord">
-                                <span>Message</span>
-                                <br />
-                                <textarea name="message" required></textarea>
-                                <br />
-                                <button>SUBMIT</button>
-
-                                <div className="row">
-                                    {result? <Result /> : null}
+                            <div className='app-contact'>
+                                CONTACT INFO :
+                                <div>
+                                    Phone: 111-222-3333
+                                </div>
+                                <div>
+                                    Email: shabnam@shabnamsdecorandevents.com
                                 </div>
                             </div>
-                        </form>
+                        </div>
+                        <div className="screen-body-item">
+                            <form className="app-form" form ref={form} onSubmit={sendEmail}>
+                                <div className="app-form-group">
+                                    <input className="app-form-control" type='text' name='fullName' placeholder='Full Name' required />
+                                </div>
+                                <div className="app-form-group">
+                                    <input className="app-form-control" type="text" name="phone" placeholder='Phone Number' required />
+                                </div>
+                                <div className="app-form-group">
+                                    <input className="app-form-control" type="text" name="email" placeholder='Email' required />
+                                </div>
+                                <div className="app-form-group message">
+                                    <input className="app-form-control" name="message" placeholder='Message' required />
+                                </div>
+                                <div className="app-form-group buttons">
+                                    <button className="app-form-button">SEND</button>
+                                </div>
+                                <div className="row">
+                                    {result ? <Result /> : null}
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div> */}
-            <div className='app__footer-contact-cards'>
-                <div className='app__footer-contact-card'>
-                    <a href='mailto:shabnam@shabnamsdecorandevents.com' className='p-text'>shabnam@shabnamsdecorandevents.com</a>
-                </div>
-                <div className='app__footer-contact-card'>
-                    <a href='tel:+1 (650) 722-1902'>+1 (650) 722-1902</a>
-                </div>
-            </div>
-            <div className='app__footer-form app__flex'>
-                <form ref={form} onSubmit={sendEmail}>
-                    <div className='app__flex'>
-                        <input className='p-text' type='text' name='fullName' placeholder='Your Full Name' required />
-                    </div>
-                    <div className='app__flex'>
-                        <input className='p-text' type="text" name="phone" placeholder='Your Phone Number' required/>
-                    </div>
-                    <div className='app__flex'>
-                        <input className='p-text' type="text" name="email" placeholder='Your Email' required/>
-                    </div>
-                    <div>
-                        <textarea name="message" placeholder='Your Message' required></textarea>
-                    </div>
-                    <div>
-                        <button>SUBMIT</button>
-                    </div>
-                </form>
             </div>
         </div>
     )

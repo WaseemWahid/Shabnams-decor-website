@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi'
-import { motion } from 'framer-motion'
 import { AppWrap, MotionWrap } from '../../wrapper'
 import { urlFor, client } from '../../client'
 
@@ -26,7 +25,7 @@ const Testimonial = () => {
         <>
         <div className='app__testimonial-head'>
             <h1 className='head-text'>Testimonials</h1>
-            <p className='p-text'>Hear what past customers have to say about my decor!</p>
+            <p className='p-text'>Hear what past customers have to say about our decor!</p>
         </div>
             {testimonials.length && (
                 <>
