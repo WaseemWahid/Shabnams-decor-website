@@ -6,7 +6,7 @@ import './Footer.css'
 const Footer = () => {
     return (
         <section id='contact'>
-            <div className='app__footer-header'>
+            {/* <div className='app__footer-header'>
                 <h1 className='head-text'>Follow Us On!</h1>
                 <div className='app__footer-socials'>
                     <div>
@@ -16,9 +16,9 @@ const Footer = () => {
                         <p className='p-text'>Facebook</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            
             <div className='app__footer'>
-                {/* Contact from under here? */}
                 <ContactMe />
             </div>
             <div className='app__footer-history'>
