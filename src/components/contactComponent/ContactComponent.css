@@ -127,6 +127,12 @@ button
     color: #888;
 }
 
+.app-contact img {
+    height: 40px;
+    width: 40px;
+    
+}
+
 .app-form-group {
     margin-bottom: 15px;
 }

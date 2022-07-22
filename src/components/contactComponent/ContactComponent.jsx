@@ -2,6 +2,7 @@ import React from 'react'
 import emailjs from '@emailjs/browser'
 import './ContactComponent.css'
 import { useState, useRef } from 'react'
+import images from '../../constants/images'
 
 import './ContactComponent.css'
 const Result = () => {
@@ -51,10 +52,12 @@ function ContactComponent(props) {
                             <div className='app-contact'>
                                 CONTACT INFO :
                                 <div>
-                                    Phone: 111-222-3333
+                                    <img src={images.phone} alt='phone'/>
                                 </div>
                                 <div>
-                                    Email: shabnam@shabnamsdecorandevents.com
+                                    
+                                    <a href='mailto:shabnam@shabnamsdecorandevents.com' className='p-text'>shabnam@shabnamsdecorandevents.com</a>
+                                    
                                 </div>
                             </div>
                         </div>
