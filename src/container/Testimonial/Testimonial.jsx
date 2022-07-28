@@ -4,6 +4,8 @@ import { AppWrap, MotionWrap } from '../../wrapper'
 import { urlFor, client } from '../../client'
 
 import './Testimonial.css'
+// make p text pink for this page 
+
 
 const Testimonial = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
