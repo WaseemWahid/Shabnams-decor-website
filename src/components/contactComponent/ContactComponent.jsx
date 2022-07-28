@@ -7,7 +7,7 @@ import images from '../../constants/images'
 import './ContactComponent.css'
 const Result = () => {
     return (
-        <p className='p-text'>Your Message has been succesfully sent. I will contact you soon!</p>
+        <p className='p-text'>Your Message has been succesfully sent. We will contact you soon!</p>
     );
 }
 

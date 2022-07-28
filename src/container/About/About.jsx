@@ -17,7 +17,7 @@ const About = () => {
 
     return (
             <div className='app__about-main'>
-                <h1 className='head-text'>What we do at <span>Shabnam's Decor</span></h1>
+                <h1 className='head-text'>What we specialize at <span>Shabnam's Decor</span></h1>
                 <div className='app__services'>
                     {abouts.map((about, index) => (
                         <motion.div
