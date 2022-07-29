@@ -21,7 +21,6 @@ const Work = () => {
                 <h2 className='head-text'>Look at our work on <span>Instagram!</span></h2>
                 <p className='p-text'>Dont forget to follow to stay up to date on all the new work we have done</p>
             </div>
-            {/* Should we add a grid of pictures on hover it will change opacity and show the instagram logo */}
             <div className='app__work-item_container'>
                 { work.map((work, index) => (
                     <div className='app__work-item' key={index} style={{background:`url(${urlFor(work.imgUrl)}) center no-repeat`, backgroundSize: "cover"}}>
