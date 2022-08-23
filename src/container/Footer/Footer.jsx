@@ -17,7 +17,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div> */}
-            
+            {/* this section needs to be finised by the end of the month! */}
             <div className='app__footer'>
                 <ContactMe />
             </div>

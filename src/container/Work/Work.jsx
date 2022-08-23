@@ -14,7 +14,7 @@ const Work = () => {
                 setWork(data);
             })
     }, [])
-
+                                // add the instagram api? waiting on client to okay this so I can proceed with project
     return (
         <div>
             <div className='app__work app__flex'>
