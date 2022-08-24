@@ -52,7 +52,7 @@ function ContactComponent(props) {
                             <div className='app-contact'>
                                 CONTACT INFO :
                                 <div>
-                                    <img src={images.phone} alt='phone'/>
+                                    <p><img src={images.phone} alt='phone'/>111-222-3333</p>
                                 </div>
                                 <div>
                                     

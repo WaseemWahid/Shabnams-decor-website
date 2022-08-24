@@ -127,7 +127,11 @@ button
     color: #888;
 }
 
-.app-contact img {
+.app-contact p {
+    font-size: larger;
+}
+
+.app-contact p img{
     height: 40px;
     width: 40px;
     
