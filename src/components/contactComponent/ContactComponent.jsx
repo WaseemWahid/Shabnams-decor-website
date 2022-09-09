@@ -17,7 +17,7 @@ function ContactComponent(props) {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_p84612l', 'template_y0quw1d', form.current, '6bXITzvghLCkifXzp')
+        emailjs.sendForm('service_p84612l', 'template_y0quw1d', form.current, process.env.EMAIL_JS_KEY)
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
