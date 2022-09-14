@@ -6,26 +6,17 @@ import './Footer.css'
 const Footer = () => {
     return (
         <section id='contact'>
-            {/* <div className='app__footer-header'>
-                <h1 className='head-text'>Follow Us On!</h1>
-                <div className='app__footer-socials'>
-                    <div>
-                        <p className='p-text'>Instagram</p>
-                    </div>
-                    <div>
-                        <p className='p-text'>Facebook</p>
-                    </div>
-                </div>
-            </div> */}
-            {/* this section needs to be finised by the end of the month! */}
             <div className='app__footer'>
-                <ContactMe />
-            </div>
-            <div className='app__footer-history'>
-                <h3 className='head-text'>A Little About <span>Us</span></h3>
-                <p className='p-text'>
-                    Shabnam's Decor was started by Shabnam Nazari who had a keen eye on design and .... 
-                </p>
+                <div className='app__footer-title'>
+                    <h1 className='head-text'>Contact Us</h1>
+                    <h3 className='sub-text'>We'd love to Help!</h3>
+                </div>
+                <div className='app__footer-contact'>
+                    <ContactMe />
+                </div>
+                <div className='app__footer-copyright'>
+                    <p className='p-text'>Copyright @2022</p>
+                </div>
             </div>
         </section>
     )

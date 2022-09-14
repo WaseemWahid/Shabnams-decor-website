@@ -50,14 +50,11 @@ function ContactComponent(props) {
                                 <span>CONTACT US</span>
                             </div>
                             <div className='app-contact'>
-                                CONTACT INFO :
-                                <div>
-                                    <p><img src={images.phone} alt='phone'/>111-222-3333</p>
+                                <div className='app__contact-phone'>
+                                    <a href='tel:+1 (650) 772-1902' className='p-text'><img src={images.phone} alt='phone'/><p>+1(650)772-1902</p></a>
                                 </div>
-                                <div>
-                                    
-                                    <a href='mailto:shabnam@shabnamsdecorandevents.com' className='p-text'>shabnam@shabnamsdecorandevents.com</a>
-                                    
+                                <div className='app__contact-email'>
+                                    <a href='mailto:shabnam@shabnamsdecorandevents.com' className='p-text'><img src={images.email} alt='email-icon'/><p>shabnam@shabnamsdecorandevents.com</p></a>
                                 </div>
                             </div>
                         </div>

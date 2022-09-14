@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-/* NEED TO CHANGE COLORS FOR THE FORM TEXT */
-
 button
 {
     font-weight: 700;
@@ -18,15 +16,14 @@ button
 }
 
 .container {
-    flex: 0 1 700px;
-    margin: auto;
-    padding: 10px;
+    min-width: 25vw;
 }
 
 .screen {
     position: relative;
     background: var(--white-color);
     border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
 }
 
 .screen:after {
@@ -38,7 +35,6 @@ button
     right: 20px;
     bottom: 0;
     border-radius: 15px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
     z-index: -1;
 }
 
@@ -125,16 +121,20 @@ button
     margin-top: auto;
     font-size: 8px;
     color: #888;
+    white-space: nowrap;
 }
 
 .app-contact p {
     font-size: larger;
 }
 
-.app-contact p img{
+.app__contact-phone img {
     height: 40px;
-    width: 40px;
     
+}
+
+.app__contact-email img {
+    height: 40px;
 }
 
 .app-form-group {
@@ -194,6 +194,7 @@ button
 @media screen and (max-width: 520px) {
     .screen-body {
         flex-direction: column;
+        min-width: 90%;
     }
 
     .screen-body-item.left {
@@ -214,11 +215,24 @@ button
 }
 
 @media screen and (max-width: 600px) {
+
+    .container {
+        width: 90vw;
+    }
+
     .screen-body {
         padding: 40px;
     }
 
     .screen-body-item {
         padding: 0;
+    }
+
+    .app__contact-email p {
+        display: none;
+    }
+
+    .app__contact-phone p {
+        display: none;
     }
 }

@@ -6,29 +6,26 @@ section {
     height: 100vh;
 }
 
+
+
 .app__footer {
     flex: 1;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: var(--lightGray-color);
 }
 
-.app__footer-header {
-    margin: 5rem;
+.app__footer-title {
+    margin-top: 2rem;
 }
 
-.app__footer-socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.sub-text { 
+    text-align: center;
+    font-size: larger;
 }
 
-/* NEED TO MAKE THE SOCIALS POP MORE */
-
-
-/* NEED TO HAVE A BETTER DESIGN FOR FOOTER  */
-
-/* when I come back from vacation we have a meeting with client  */
-
-/* discuss layout for footer and go over website one final time after  */
-
-/* back end information needs to be filled by client  */
+.app__footer-copyright {
+    margin-top: 100px;
+}
