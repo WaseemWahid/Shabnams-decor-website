@@ -24,8 +24,28 @@ section {
 .sub-text { 
     text-align: center;
     font-size: larger;
+    color: var(--secondary-color);
+    margin-bottom: 3rem;
+}
+
+.app__footer-social {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+}
+
+.app__footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    color: var(--secondary-color);
+}
+
+.app__footer-links svg {
+    width: 25px;
+    height: 25px;
 }
 
 .app__footer-copyright {
-    margin-top: 100px;
+    margin-top: 5rem;
 }
