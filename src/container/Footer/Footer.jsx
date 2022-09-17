@@ -20,10 +20,14 @@ const Footer = () => {
                     <p className='p-text'>Follow us on Facebook and Instagram!</p>
                     <div className='app__footer-links'>
                         <div>
-                            <a><FaFacebookF /> </a>
+                            <a href="https://www.facebook.com/Shabnams-Decor-and-Events-107327561894446/" target="_blank" rel="noreferrer">
+                                <FaFacebookF /> 
+                            </a>
                         </div>
                         <div>
-                            <a><BsInstagram /></a>
+                            <a href="https://www.instagram.com/shabnams_decor/" target="_blank" rel="noreferrer">
+                                <BsInstagram />
+                            </a>
                         </div>
                         
                     </div>

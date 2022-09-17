@@ -1,26 +1,43 @@
 .about__app { 
     flex: 1;
     width: 100%;
-    height: 100vh;
+    height: 85vh;
 }
 
 .about__app-container {
+    margin-top: 5rem;
+    margin-bottom: -10rem;
     background-color: aliceblue;
     display: flex;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    transition: all 0.3s ease-in-out;
 }
 
 .about__app-image {
-    background-color: aqua;
-    
+    padding: 1rem;
 }
 
 .about__app-image img {
-    height: 200px;
-    width: 200px;
-    margin-top: 50%;
+    height: 200x;
+    width: 400px;
+    border-radius: 15px;
 }
 
 .about__app-text {
-    background-color: blueviolet;
-    font-size: xx-large;
+    padding: 1rem
+}
+
+.head-text {
+    font-size: 5rem; 
+}
+
+.about-text {
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-align: left;
+    color: var(--gray-color);
+    line-height: 1.5;
+    letter-spacing: 0.15rem;
 }
