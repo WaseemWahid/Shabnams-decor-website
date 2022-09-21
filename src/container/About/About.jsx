@@ -9,7 +9,10 @@ const About = () => {
             {/* also Will need a picture of client she is comfortable to upload  */}
             <div className='about__app-container'>
                 <div className='about__app-image'>
-                    <img src={images.aboutImg} alt='about-image' />
+                    <img 
+                    src={images.aboutImg} 
+                    alt='about-image' 
+                    />
                 </div>
                 <div className='about__app-text'>
                     <h1 className ='head-text'>About <span>Us</span></h1>

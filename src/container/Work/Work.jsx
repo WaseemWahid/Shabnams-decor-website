@@ -17,14 +17,33 @@ const Work = () => {
     // rework work component to look more cleaner and more elegant 
     return (
         <div>
-            <div className='app__work app__flex'>
-                <h2 className='head-text'>Look at our work on <span>Instagram!</span></h2>
-                <p className='p-text'>Dont forget to follow to stay up to date on all the new work we have done</p>
+            <div 
+            className='app__work app__flex'>
+                <h2 
+                className='head-text'>
+                    Look at our work on 
+                    <span>
+                        Instagram!
+                    </span>
+                </h2>
+                <p 
+                className='p-text'>
+                    Dont forget to follow to stay up to date on all the new work we have done
+                </p>
             </div>
             <div className='app__work-item_container'>
                 { work.map((work, index) => (
-                    <div className='app__work-item' key={index} style={{background:`url(${urlFor(work.imgUrl)}) center no-repeat`, backgroundSize: "cover"}}>
-                            <a className='app__work-item-link' href={work.instaLink} target="_blank" rel="noreferrer">
+                    <div 
+                    className='app__work-item' 
+                    key={index} 
+                    style={{background:`url(${urlFor(work.imgUrl)}) 
+                    center no-repeat`, backgroundSize: "cover"}}
+                    >
+                            <a 
+                            className='app__work-item-link' 
+                            href={work.instaLink} 
+                            target="_blank" 
+                            rel="noreferrer">
                                 <div>
                                     <BsInstagram />
                                 </div>
