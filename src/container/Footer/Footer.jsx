@@ -11,7 +11,7 @@ const Footer = () => {
             <div className='app__footer'>
                 <div className='app__footer-title'>
                     <h1 className='head-text'>Contact Us</h1>
-                    <h3 className='sub-text'>We'd <BsFillHeartFill/> to Help!</h3>
+                    <h3 className='sub-text'>We'd <BsFillHeartFill/> to Connect!</h3>
                 </div>
                 <div className='app__footer-contact'>
                     <ContactMe />

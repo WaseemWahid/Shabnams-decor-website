@@ -21,14 +21,13 @@ const Work = () => {
             className='app__work app__flex'>
                 <h2 
                 className='head-text'>
-                    Look at our work on 
-                    <span>
+                    Look at our work on <span>
                         Instagram!
                     </span>
                 </h2>
                 <p 
                 className='p-text'>
-                    Dont forget to follow to stay up to date on all the new work we have done
+                    Dont forget to follow us on Instagram to stay up to date on all our new work
                 </p>
             </div>
             <div className='app__work-item_container'>
