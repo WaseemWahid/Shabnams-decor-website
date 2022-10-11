@@ -15,6 +15,8 @@ const Services = () => {
             .then((data) => setAbouts(data))
     }, [])
 
+    //  waiting on client to come up with what she wants each description to be 
+
     return (
             <div className='app__services-main'>
                 <h1 className='head-text'>Services we provide at <span>Shabnam's Decor</span></h1>
