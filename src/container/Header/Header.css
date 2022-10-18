@@ -51,6 +51,7 @@ video {
     background-color: rgb(245, 245, 245);
     padding: 10px 40px;
     mix-blend-mode: screen;
+    border-radius: 15px;
 }
 
 .content p {
