@@ -16,11 +16,11 @@ const About = () => {
                 
                 <div className='about__app-text'>
                     <p className ='about-text'>
-                    Founded in 2021, Shabnam's Decor and Events is a Woman Minority owned Decor and Floral business. We specialize in Custom Event Decor,
-                    Design and Florals to the clients needs. We truly have a passion for design and cannot wait to create something magical for your day. 
-                    We have served Weddings, Engagements, Quinces, Anniversaries and Birthday events.
-                    Contacts us today for a consultation!
-                    </p>
+                        Founded in 2021, Shabnam's Decor and Events is a Woman Minority owned Decor and Floral business. We specialize in Custom Event Decor,
+                        Design and Florals to the clients needs. We truly have a passion for design and cannot wait to create something magical for your day. 
+                        We have served Weddings, Engagements, Quinces, Anniversaries and Birthday events.
+                        Contacts us today for a consultation!
+                        </p>
                 </div>
             </div>
         </div>
