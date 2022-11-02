@@ -20,8 +20,7 @@ const Header = () => {
                 whileInView={{x: [-100, 0], opacity: [0, 1]}}
                 transition={{ duration: 1.0 }}
                 className="content">
-                    <h1 className='head-text'>Decor</h1>
-                    <p>by Shabnam</p>
+                    <h1 className='head-text'><img src={images.logo} alt='logo' /></h1>
                 </motion.div>
             </div>
         </section>

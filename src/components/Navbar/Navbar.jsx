@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { images } from '../../constants'
 import { motion } from 'framer-motion'
 import { IoIosRose, IoIosCloseCircle } from 'react-icons/io' // check with client to see if she wasnts IoIosRose or FcCloseUpMode for final build
 
@@ -13,7 +14,7 @@ const Navbar = () => {
   return (
     <nav className='app__navbar'>
       <div className='app__navbar-logo'>
-        <h4>Decor</h4>
+        <img src={images.logo} alt='logo'/>
       </div>
       <ul className='app__navbar-links'>
         {['home', 'about', 'services', 'work', 'testimonial', 'contact'].map((item) => (
