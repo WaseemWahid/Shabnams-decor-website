@@ -14,6 +14,7 @@ const Header = () => {
                 autoPlay 
                 loop 
                 muted 
+                playsinline
                 alt="background video"
                 />
                 <motion.div 
