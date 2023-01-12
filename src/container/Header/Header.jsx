@@ -5,6 +5,7 @@ import { images } from '../../constants'
 import './Header.css'
 
 const Header = () => {
+    // check apple.com to make video work with plays inline data inline 
     return (
         <section id='home'>
             <div className='main'>
